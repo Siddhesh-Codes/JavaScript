@@ -26,6 +26,6 @@ let pro;
 
 empName = "Ram"
 password = "36562"
-empCity = "Bengalore"
+empCity = "Bangalore"
 
 console.table([empID,empName,pro,empCity,password])
