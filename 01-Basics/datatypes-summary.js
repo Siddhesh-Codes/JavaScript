@@ -41,4 +41,29 @@ const myFun = function () {
 // console.log(typeof id);
 
 
+// *******************Sack & Heap Memory*******************
 
+// Stack (Primitive Data Types)  Heap(Non-Primitive)
+
+
+let numOne = 10;
+let numTwo = numOne; // here copy of the reference of the original variable gets assigned 
+numTwo = 50; // here because we've assigned the copy of the original reference variable so the original variable value doesnt get affect because of primitive Data Type.
+// console.log(numOne); // 10
+// console.log(numTwo); // 50
+
+
+let userOne = {
+    email:"user@gmail.com",
+    name:"Siddhesh"
+};
+
+// console.log(userOne);
+
+let userTwo = userOne; // here the reference of the original variable got assigned so the changes we made by using new variable will affect in the userOne as well because of the Non-Primitive Data Type 
+
+userTwo.email = "siddhesh@labdox.in";
+userTwo.name = "siddhesh";
+
+// console.log(userOne);
+// console.log(userTwo);
