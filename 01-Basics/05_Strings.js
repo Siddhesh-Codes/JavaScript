@@ -55,7 +55,7 @@ const result = text.match(/in/g); // g = global
 // Without g: only the first match is returned.
 // With g: all matches are returned in an array.
 
-console.log(result); // Output: [ 'ain', 'ain', 'ain', 'ain' ]
+console.log(result); // Output: [ 'in', 'in', 'in', 'in' ]
 
 
 
