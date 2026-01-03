@@ -63,8 +63,8 @@ let str2 = "Siddhesh ";
 // console.log("1" + 3); // String => 13
 // console.log(1 + "3"); // String => 13
 
-// console.log(1 + 2 + "3"); 
-// console.log(typeof 1 + 2 + "3"); 
+// console.log(1 + 2 + "3");  // 33
+// console.log(typeof 1 + 2 + "3"); // number23 
 
 // console.log(+true); // output: 1,  avoid writing messy code in the company.
 // console.log(+""); // output:0, avoid writing messy code in the company.
