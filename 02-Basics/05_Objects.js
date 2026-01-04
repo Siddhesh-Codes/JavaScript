@@ -36,7 +36,7 @@ const {courseInstructor : instructor} = course;
 //     "age":"21",
 // }
 
-// Can we JSON - APIs in Array Form
+// JSON - APIs in Array Form
 // [
 //     {},
 //     {},
