@@ -59,8 +59,8 @@ console.log("B ",arr1);
 
 
 const arr4 = arr1.splice(1,3);
-console.log("C ",arr1); 
-console.log(arr4); // if we use + here then we will get string formated array C 1,2,3 instead of C  [ 1, 2, 3 ]
+console.log("C ",arr1); // // if we use + here then we will get string formated array C 1,2,3 instead of C  [ 1, 2, 3 ]
+console.log(arr4); 
 
 // console.log(arr1); // here our og array 
 
