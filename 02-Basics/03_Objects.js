@@ -16,7 +16,7 @@
 // console.log(myObj["email"]);
 // console.log(myObj["age"]);
 // console.log(myObj["name"]);
-// console.log(myObj["full name"]);
+// console.log(myObj["full name"]); // Siddhesh Shinde
 
 
 
@@ -43,7 +43,7 @@ obj.email = "siddhesh@dev.com";
 // Object.freeze(obj); // to freeze entire obj of getting change.
 // Object.freeze(obj.email); // Still we can modify the email address
 
-// This syntax we have to use to prevent updating the value of emial.
+// This syntax we have to use to prevent updating the value of email.
 // Object.defineProperty(obj, "email", {
 //   writable: false,
 //   configurable: false
