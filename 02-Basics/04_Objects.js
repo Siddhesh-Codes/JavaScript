@@ -48,15 +48,39 @@ const obj4 = {...obj1,...obj2};
 
 console.log(obj);
 
-console.log(Object.keys(obj)); // [ 'userName', 'isLoggedIn', 'age' ]
+// console.log(Object.keys(obj)); // [ 'userName', 'isLoggedIn', 'age' ]
 // It will return all the "keys" of the objects in the new Separate "Array".
 
-console.log(Object.values(obj)); // [ 'Siddhesh', true, 21 ]
+// console.log(Object.values(obj)); // [ 'Siddhesh', true, 21 ]
 // It will return all the "values" of the objects in the new Separate "Array".
 
-console.log(Object.entries(obj)); 
+// console.log(Object.entries(obj)); 
 // [ [ 'userName', 'Siddhesh' ], [ 'isLoggedIn', true ], [ 'age', 21 ] ]
 // It will return all the "keys" and "values" of the given Object.
 
-console.log(obj.hasOwnProperty('userName')); // true
+// console.log(obj.hasOwnProperty('userName')); // true
 // To check whether the any property is present or not 
+
+
+// When values comes from the Databases it comes in Array-Object format
+
+const users = [
+    {
+        id:1,
+        email:"siddhesh@google.com"
+    },
+    {
+        id:2,
+        email:"siddhesh@google.com"
+    },
+    {
+        id:1,
+        email:"siddhesh@google.com"
+    }
+]
+
+// To access these values we'll use Array based indexing i.e 0,1
+// console.log(users[0].email);
+// console.log(users[0].id);
+// console.log(users[1].email);
+// console.log(users[1].id);
