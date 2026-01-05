@@ -23,7 +23,26 @@ const isLoggedInFromEmail = true;
 //     console.log("Allow to do shopping!!"); 
 // }
 
-if (isLoggedInFromEmail || isLoggedInFromGoogle) {
-    console.log("Welcome!!");
+// if (isLoggedInFromEmail || isLoggedInFromGoogle) {
+//     console.log("Welcome!!");
     
-}
+// }
+
+
+// Nullish Coalescing Operator (??): null undefined
+
+let val1;
+
+// val1 = 10 ?? 20; // 10
+// val1 = null ?? 20; // 20
+// val1 = undefined ?? 30; // 30
+val1 = null ?? 20 ?? 30; // 20
+
+// console.log(val1);
+
+
+// Ternary Operator 
+let icePrice = 100;
+// icePrice >= 80 ? console.log("Greater than 80") : console.log("Less than 80");
+
+
