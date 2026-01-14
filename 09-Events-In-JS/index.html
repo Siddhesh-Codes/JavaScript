@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JS </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <!-- Below method is not efficient and will fail when we want to scale our application -->
+            <!-- <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" onclick="alert('Hello')"></li> -->
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+
+<script>
+    // This is also an inefficient way to work with the events
+    document.getElementById('river').onclick = ()=>{
+        // alert('hello');
+    }
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+    // Efficient way to add events
+    document.querySelector('#owl').addEventListener('click', () => {
+        // alert('hello');
+    }, false); // here false is by default we can write or we cannot 
+
+    // Event Propogation
+
+    // Stop Propogation
+    
+    // Event Bubbling and Event Capturing
+    // Event Bubbling flow = Bottom to Top
+    // Output : Prayer, Inside the UL tag
+    
+    // Event Capturing flow = Top to Bottom
+    // Output:  Inside the UL tag, Prayer
+    document.getElementById('images').addEventListener('click', () => {
+        // console.log("Inside the UL tag");
+    },false);
+
+    document.getElementById('prayer').addEventListener('click', (e) => {
+        // console.log("Prayer");
+        // to stop the bubble values to get fludded above so we'll use following method
+        // e.stopPropagation();    
+    },false);
+
+    // To stop the clickable links to Open
+    document.getElementById('google').addEventListener('click', (e)=>{
+        e.preventDefault();
+        e.stopPropagation();
+        // console.log("Google Clicked!!");
+    },false);
+
+    document.querySelector('#images').addEventListener('click', (e)=> {
+        // target : to check from where we're getting the values
+        // parentNode : to select the entire thing
+        
+        console.log(e.target.tagName);
+        
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        } 
+        
+        // removeIt.parentNode.removeChild(removeIt);
+    },false);
+
+</script>
