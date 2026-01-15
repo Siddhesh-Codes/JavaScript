@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout in JS</title>
+</head>
+<body>
+    <h1>Hello My Name is Siddhesh </h1>
+
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHi = () => {
+        console.log("Hello this is Siddhesh");
+    };
+
+    // Working of setTimeout() - it will run only once after sometime.
+    // setTimeout(() => {
+        //     console.log("Siddhesh");
+        // }, 2000);
+    
+    // another way to usr setTImeout(pass reference of the function (reference only), time);
+
+    // setTimeout(sayHi, 2000);
+
+
+    const name = setTimeout(() => {
+        document.querySelector('h1').innerHTML = "Hello My name is Ram";
+    },3000);
+
+    document.querySelector('#stop').addEventListener("click",()=>{
+        console.log("STOPPED");
+        clearTimeout(name);
+    });
+
+</script>
+</html>
