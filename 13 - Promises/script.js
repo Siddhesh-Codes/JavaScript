@@ -63,3 +63,4 @@ const promiseFour = new Promise((resolve,reject) => {
 })
 .finally(()=> console.log("The Promise is either resolved or Rejected!!"));
 // The Promise is either resolved or Rejected!!
+
