@@ -140,6 +140,26 @@ fetch('https://jsonplaceholder.typicode.com/users')
 })
 
 
+// Async/Await : 
+// Imagine you ask your mom for a glass of water. While she goes to get it, you keep playing with your toys—you don’t just stand and wait. When she brings the water, you stop playing and drink it.
+
+// In JavaScript, async and await help your code do the same thing!
+
+// async means, “Hey, this function might take some time, but you can keep doing other things.”
+// await means, “Now, let’s pause and wait for the important thing (like the water) to be ready before we continue.”
+// So, your code can play and do other stuff, and only stop when it really needs to wait for something special!
+
+
+
+// Try-Catch: 
+// Imagine you’re building a tower with blocks. Sometimes, the tower might fall down. If it does, you don’t cry—you just pick up the blocks and try again!
+
+// In JavaScript, try is like building your tower. You hope everything works.
+// catch is like picking up the blocks if something goes wrong. It helps your code not to crash, but to fix the problem and keep going.
+
+// So, try is for doing something, and catch is for helping if there’s a mistake!
+
+
 
 // Real World Applications 
 
