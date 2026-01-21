@@ -64,3 +64,46 @@ const promiseFour = new Promise((resolve,reject) => {
 .finally(()=> console.log("The Promise is either resolved or Rejected!!"));
 // The Promise is either resolved or Rejected!!
 
+
+// Promise 5:
+const promiseFive = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let error = true;
+        if(!error) {
+            resolve({userName:"Siddhesh", password: "123"})
+        } else {
+            reject("ERROR: Something Went Wrong!!")
+        }
+    }, 2000);
+});
+
+const fun = async (params) => {
+    try {
+        const response = await promiseFive;
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+}
+fun();
+
+
+// async function getAllUsers(params) {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users');
+//     const data = await response.json();
+//     console.log(data);
+//     } catch (error) {
+//         console.log("E: ", error);
+//     }
+// }
+// getAllUsers();
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json();
+})
+.then((response) => {
+    console.log(response);
+})
+.catch((error) => console.log(error));
