@@ -35,6 +35,3 @@ const userThree = new User('Ram', 8, true);
 // User { username: 'Ram', loginCount: 8, isLoggedIn: true }
 // User { username: 'Sidd', loginCount: 8, isLoggedIn: true }
 // User { username: 'Sham', loginCount: 8, isLoggedIn: true }
-
-
-
