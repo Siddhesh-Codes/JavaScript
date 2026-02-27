@@ -19,8 +19,7 @@ function User(userName, loginCount, isLoggedIn) {
     this.isLoggedIn = isLoggedIn;
 
     // return this;
-    // console.log(userName);
-    
+    // console.log(userName);   
 }
 // console.log(User('Siddhesh', 8,true));
 
