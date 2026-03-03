@@ -13,6 +13,7 @@ promiseOne.then(()=>{
 })
 
 
+
 // 2 Promise 
 
 new Promise((resolve,reject)=> {
