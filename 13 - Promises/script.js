@@ -32,7 +32,7 @@ new Promise((resolve,reject)=> {
 
 const promiseThree = new Promise((resolve,reject)=>{
     setTimeout(() => {
-        resolve({userName: "Siddhesh", email: "siddheshshinde192@gmail.com"}) // here we can pass any values like objects, arrays etc.
+        resolve({userName: "Siddhesh", email: "siddhesh@gmail.com"}) // here we can pass any values like objects, arrays etc.
     }, 1000); // this will get print first because its taking 1 sec and others taking 2 secs
 }).then((user) => {
     console.log(user);
