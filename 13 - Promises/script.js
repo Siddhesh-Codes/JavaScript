@@ -28,7 +28,6 @@ new Promise((resolve,reject)=> {
     // Async Task 2
 })
 
-
 // 3rd Promise
 
 const promiseThree = new Promise((resolve,reject)=>{
