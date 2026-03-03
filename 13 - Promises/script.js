@@ -37,7 +37,7 @@ const promiseThree = new Promise((resolve,reject)=>{
 }).then((user) => {
     console.log(user);
     // { userName: 'Siddhesh', email: 'siddheshshinde192@gmail.com' }
-})
+})  
 
 
 // Promise 4
