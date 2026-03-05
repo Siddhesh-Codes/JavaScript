@@ -52,6 +52,8 @@ const promiseFour = new Promise((resolve,reject) => {
         }
     }, 2000);
 })
+
+
 .then((user) => {
     console.log(user); // { userName: 'Siddhesh', password: '123' }
     return user.userName; // Siddhesh
