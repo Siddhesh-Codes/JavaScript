@@ -19,9 +19,6 @@
 // console.log(chai.encryptPassword()); // 123abc
 // console.log(chai.changeUsername()); // 123abc
 
-
-
-
 // Behind the Scene of the above code.
 
 function User(username, email, password) {
