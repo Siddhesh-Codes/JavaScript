@@ -32,8 +32,6 @@ for (const [key, value] of map) { // we use [key, value] pairs to iterate over a
     // USA :- United State of America
     // FR :- France   
 }
-
-
 const myObj = {
     game1: "NFS",
     game2: "BGMI"
